@@ -120,7 +120,7 @@
  * pin of the cellular module; use -1 where there is no such
  * connection.
  */
-# define U_CFG_APP_PIN_CELL_RESET             -1
+# define U_CFG_APP_PIN_CELL_RESET             16
 #endif
 
 #ifndef U_CFG_APP_PIN_CELL_VINT
@@ -199,7 +199,7 @@
 /** The UART HW block to use inside the ESP32 chip to talk to a
  * GNSS module.
  */
-# define U_CFG_APP_GNSS_UART                  -1
+# define U_CFG_APP_GNSS_UART                  1
 #endif
 
 #ifndef U_CFG_APP_GNSS_I2C
@@ -238,14 +238,14 @@
 /** The ESP32 GPIO output pin that sends UART data to the
  * GNSS module.
  */
-# define U_CFG_APP_PIN_GNSS_TXD              -1
+# define U_CFG_APP_PIN_GNSS_TXD              44
 #endif
 
 #ifndef U_CFG_APP_PIN_GNSS_RXD
 /** The ESP32 GPIO input pin that receives UART data from the
  * GNSS module.
  */
-# define U_CFG_APP_PIN_GNSS_RXD              -1
+# define U_CFG_APP_PIN_GNSS_RXD              43
 #endif
 
 #ifndef U_CFG_APP_PIN_GNSS_CTS
